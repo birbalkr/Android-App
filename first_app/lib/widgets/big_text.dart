@@ -1,3 +1,4 @@
+import 'package:first_app/utils/dimensions.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -11,7 +12,7 @@ class BigText extends StatelessWidget {
       this.color = const Color(0xFF332d2b),
       required this.text,
       this.overFlow = TextOverflow.ellipsis,
-      this.size = 20});
+      this.size = 0});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +24,7 @@ class BigText extends StatelessWidget {
       GoogleFonts.robotoMono(textStyle:TextStyle(
         color: color,
         fontWeight: FontWeight.w400,
-        fontSize: size,
+        fontSize:size==0? Dimensions.font20 :size,
       ),),
     );
   }
