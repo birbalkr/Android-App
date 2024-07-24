@@ -5,13 +5,15 @@ class SmallText extends StatelessWidget {
   final String text;
   double size;
   double height;
+  int maxline;
 
   SmallText(
       {super.key,
         this.color = const Color.fromRGBO(122, 124, 124, 1.0),
         required this.text,
         this.size = 12,
-        this.height=1.2});
+        this.height=1.2,
+        this.maxline = 100});
 
   @override
   Widget build(BuildContext context) {
@@ -22,8 +24,8 @@ class SmallText extends StatelessWidget {
         fontWeight: FontWeight.w400,
         fontSize: size,
         height: height,
-
       ),
+      maxLines: maxline,
     );
   }
 }

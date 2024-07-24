@@ -1,7 +1,6 @@
 import 'package:first_app/utils/colors.dart';
 import 'package:first_app/utils/dimensions.dart';
 import 'package:first_app/widgets/small_text.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ExpendableTextWidget extends StatefulWidget {
