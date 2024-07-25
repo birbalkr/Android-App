@@ -1,18 +1,32 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/responsive/responsive_layout.dart';
 import 'package:whatsapp_clone/screens/mobile_screen/mobile_screen_layout.dart';
 import 'package:whatsapp_clone/screens/web_screen/web_screen_layout.dart';
 
+// void main() {
+//   runApp(const MyApp());
+// }
+import 'package:device_preview/device_preview.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(
+  DevicePreview(
+    enabled: !kReleaseMode,
+    builder: (context) => MyApp(), // Wrap your app
+  ),
+);
+
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+
+        locale: DevicePreview.locale(context),
+        builder: DevicePreview.appBuilder,
+
       debugShowCheckedModeBanner: false,
       title: 'WhatsApp_Clone',
       theme: ThemeData.dark().copyWith(
