@@ -36,9 +36,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: MainFoodPage(),
-      initialRoute: RouteHelper.initial,
-      getPages:RouteHelper.routes,
+      initialRoute:RouteHelper.getinitial(),
+      getPages: RouteHelper.routes,
     );
   }
 }

@@ -87,4 +87,13 @@ class CartController extends GetxController {
       return e.value;
     }).toList();
   }
+
+  int get totalAmount{
+    var total=0;
+    _item.forEach((key,value){
+      total += value.quantity!*value.price!;
+    });
+
+    return total;
+}
 }
