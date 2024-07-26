@@ -1,18 +1,17 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/responsive/responsive_layout.dart';
-import 'package:whatsapp_clone/screens/mobile_screen/mobile_screen_layout.dart';
-import 'package:whatsapp_clone/screens/web_screen/web_screen_layout.dart';
-
+import 'package:whatsapp_clone/screens/mobile_screen/home_page.dart';
 // void main() {
 //   runApp(const MyApp());
 // }
 import 'package:device_preview/device_preview.dart';
+import 'package:whatsapp_clone/screens/mobile_screen.dart';
+import 'package:whatsapp_clone/utils/colors.dart';
 
 void main() => runApp(
   DevicePreview(
     enabled: !kReleaseMode,
-    builder: (context) => MyApp(), // Wrap your app
+    builder: (context) => const MyApp(), // Wrap your app
   ),
 );
 
@@ -30,10 +29,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'WhatsApp_Clone',
       theme: ThemeData.dark().copyWith(
-
+        scaffoldBackgroundColor: backgroundColor,
       ),
-      home:ResponsiveLayout(mobileScreenLayout: MobileScreenLayout(), webScreenLayout: WebScreenLayout())
-
+      home: MobileScreen(),
     );
   }
 }
