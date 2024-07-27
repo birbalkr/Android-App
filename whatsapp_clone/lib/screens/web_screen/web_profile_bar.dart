@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/utils/colors.dart';
 
@@ -10,10 +10,10 @@ class WebProfileBar extends StatelessWidget {
     return Container(
       height: MediaQuery.of(context).size.height*0.10,
       width: MediaQuery.of(context).size.width*0.25,
-      padding: EdgeInsets.all(10),
-      decoration: BoxDecoration(
+      padding: const EdgeInsets.all(10),
+      decoration: const BoxDecoration(
         border: Border(
-          right: BorderSide(
+          right:  BorderSide(
             color: dividerColor,
           )
         ),
@@ -22,12 +22,12 @@ class WebProfileBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          CircleAvatar(backgroundImage: NetworkImage('https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg'),
+          const CircleAvatar(backgroundImage: NetworkImage('https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg'),
           radius: 20,),
           Row(
             children: [
-              IconButton(onPressed: (){}, icon: Icon(Icons.insert_comment_outlined)),
-              IconButton(onPressed: (){}, icon: Icon(Icons.more_vert))
+              IconButton(onPressed: (){}, icon: const Icon(Icons.insert_comment_outlined)),
+              IconButton(onPressed: (){}, icon: const Icon(Icons.more_vert))
             ],
           )
         ],

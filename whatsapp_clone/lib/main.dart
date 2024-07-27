@@ -1,6 +1,5 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/screens/mobile_screen/home_page.dart';
 // void main() {
 //   runApp(const MyApp());
 // }
@@ -31,7 +30,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: backgroundColor,
       ),
-      home: MobileScreen(),
+      home: const MobileScreen(),
     );
   }
 }

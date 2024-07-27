@@ -9,6 +9,6 @@ class MobileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ResponsiveLayout(mobileScreenLayout: HomePage(), webScreenLayout: WebScreenLayout());
+    return const ResponsiveLayout(mobileScreenLayout: HomePage(), webScreenLayout: WebScreenLayout());
   }
 }

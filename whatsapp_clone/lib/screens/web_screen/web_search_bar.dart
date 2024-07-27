@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/utils/colors.dart';
 
@@ -10,33 +10,33 @@ class WebSearchBar extends StatelessWidget {
     return Container(
       height: MediaQuery.of(context).size.height * 0.12,
       width: MediaQuery.of(context).size.width * 0.25,
-      padding: EdgeInsets.all(10),
-      decoration: BoxDecoration(
+      padding: const EdgeInsets.all(10),
+      decoration: const BoxDecoration(
         border: Border(
-          bottom: BorderSide(color: dividerColor),
+          bottom:  BorderSide(color: dividerColor),
         ),
       ),
       child: TextField(
         decoration: InputDecoration(
             filled: true,
             fillColor: searchBarColor,
-            prefixIcon: Padding(
+            prefixIcon: const Padding(
               padding: EdgeInsets.symmetric(horizontal: 20),
-              child: Icon(
+              child:  Icon(
                 Icons.search_rounded,
                 size: 20,
               ),
             ),
             hintText: 'Search',
-            hintStyle: TextStyle(fontSize: 14),
+            hintStyle: const TextStyle(fontSize: 14),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(20),
-              borderSide: BorderSide(
+              borderSide: const BorderSide(
                 width: 0,
                 style: BorderStyle.none,
               ),
             ),
-            contentPadding: EdgeInsets.all(10)),
+            contentPadding: const EdgeInsets.all(10)),
       ),
     );
   }

@@ -21,42 +21,42 @@ class _HomePageState extends State<HomePage> {
 
   List<Widget> _buildScreens() {
     return [
-      MobileScreenLayout(),
-      Center(
-        child: Text("next"),
+      const MobileScreenLayout(),
+      const Center(
+        child:  Text("next"),
       ),
-      Center(
+      const Center(
         child: Text("next page"),
       ),
-      Center(
-        child: Text("next page next"),
+      const Center(
+        child:  Text("next page next"),
       ),
     ];
   }
   List<PersistentBottomNavBarItem> _navBarsItems() {
     return [
       PersistentBottomNavBarItem(
-        icon: Icon(CupertinoIcons.chat_bubble_text_fill,color: Colors.blueAccent,),
+        icon: const Icon(CupertinoIcons.chat_bubble_text_fill,color: Colors.blueAccent,),
         title: ("Chats"),
         activeColorPrimary: CupertinoColors.activeBlue,
         inactiveColorPrimary: CupertinoColors.systemGrey,
       ),
       PersistentBottomNavBarItem(
-        icon: Icon(CupertinoIcons.archivebox,color: Colors.blueAccent,),
+        icon: const Icon(CupertinoIcons.archivebox,color: Colors.blueAccent,),
         title: ("Update"),
         activeColorPrimary: CupertinoColors.activeBlue,
         inactiveColorPrimary: CupertinoColors.systemGrey,
         // scrollController: _scrollController2,
       ),
       PersistentBottomNavBarItem(
-        icon: Icon(CupertinoIcons.person_3,color: Colors.blueAccent,),
+        icon: const Icon(CupertinoIcons.person_3,color: Colors.blueAccent,),
         title: ("Communities"),
         activeColorPrimary: CupertinoColors.activeBlue,
         inactiveColorPrimary: CupertinoColors.systemGrey,
         // scrollController: _scrollController2,
       ),
       PersistentBottomNavBarItem(
-        icon: Icon(CupertinoIcons.phone,color:Colors.blueAccent,),
+        icon: const Icon(CupertinoIcons.phone,color:Colors.blueAccent,),
         title: ("Calls"),
         activeColorPrimary: CupertinoColors.activeBlue,
         inactiveColorPrimary: CupertinoColors.systemGrey,
