@@ -1,6 +1,10 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
 const info = [
   {
     'name': 'Rivaan Ranawat',
+    'icon':'Icons.call_received',
     'message': 'Hey, how are you doing?',
     'time': '3:53 pm',
     'profilePic':
@@ -8,6 +12,7 @@ const info = [
   },
   {
     'name': 'John Doe',
+    'icon':'Icons.call_received',
     'message': 'Hello, whats up',
     'time': '2:25 pm',
     'profilePic':
@@ -15,6 +20,7 @@ const info = [
   },
   {
     'name': 'Naman Ranawat',
+    'icon':'Icons.call_made',
     'message': 'Hello, I want to sleep.',
     'time': '1:03 pm',
     'profilePic':
@@ -23,6 +29,7 @@ const info = [
   {
     'name': 'Dad',
     'message': 'Call me, have some work',
+    'icon':'Icons.call_received',
     'time': '12:06 pm',
     'profilePic':
         'https://pbs.twimg.com/profile_images/1419974913260232732/Cy_CUavB.jpg',
@@ -30,6 +37,7 @@ const info = [
   {
     'name': 'Mom',
     'message': 'You ate food?',
+    'icon':Icon(Icons.call_made),
     'time': '10:00 am',
     'profilePic':
         'https://uploads.dailydot.com/2018/10/olli-the-polite-cat.jpg?auto=compress%2Cformat&ixlib=php-3.3.0',
@@ -37,6 +45,7 @@ const info = [
   {
     'name': 'Jurica',
     'message': 'Yo!!!!! Long time, no see!?',
+    'icon':Icon(Icons.call_made),
     'time': '9:53 am',
     'profilePic':
         'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
@@ -44,6 +53,7 @@ const info = [
   {
     'name': 'Albert Dera',
     'message': 'Am I fat?',
+    'icon':Icon(Icons.call_missed),
     'time': '7:25 am',
     'profilePic':
         'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
@@ -51,6 +61,7 @@ const info = [
   {
     'name': 'Joseph',
     'message': 'I am from International Olym...',
+    'icon':Icon(Icons.call_missed),
     'time': '6:02 am',
     'profilePic':
         'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
@@ -58,6 +69,7 @@ const info = [
   {
     'name': 'Sikandar',
     'message': 'Lets Code!',
+    'icon':Icon(Icons.call_missed),
     'time': '4:56 am',
     'profilePic':
         'https://images.unsplash.com/photo-1619194617062-5a61b9c6a049?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60',
@@ -66,6 +78,7 @@ const info = [
     'name': 'Ian Dooley',
     'message': 'Images by Unsplash',
     'time': '1:00 am',
+    'icon':Icon(Icons.call_missed),
     'profilePic':
         'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
   },

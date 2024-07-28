@@ -1,7 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
+import 'package:whatsapp_clone/screens/mobile_screen/Communities_page.dart';
+import 'package:whatsapp_clone/screens/mobile_screen/call/call_page.dart';
 import 'package:whatsapp_clone/screens/mobile_screen/mobile_screen_layout.dart';
+import 'package:whatsapp_clone/screens/mobile_screen/updates/updates_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -22,15 +25,9 @@ class _HomePageState extends State<HomePage> {
   List<Widget> _buildScreens() {
     return [
       const MobileScreenLayout(),
-      const Center(
-        child:  Text("next"),
-      ),
-      const Center(
-        child: Text("next page"),
-      ),
-      const Center(
-        child:  Text("next page next"),
-      ),
+      UpdatesPage(),
+      const CommunitiesPage(),
+      CallPage(),
     ];
   }
   List<PersistentBottomNavBarItem> _navBarsItems() {

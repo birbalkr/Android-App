@@ -1,5 +1,7 @@
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:whatsapp_clone/screens/web_screen/web_search_bar.dart';
 import 'package:whatsapp_clone/utils/colors.dart';
 import 'package:whatsapp_clone/utils/info.dart';
 
@@ -17,7 +19,8 @@ class ContactsList extends StatelessWidget {
             return Column(
               children: [
                 InkWell(
-                  onTap: (){},
+                  onTap: (){
+                  },
                   child: Padding(
                     padding: const EdgeInsets.only(bottom: 8.0),
                     child: ListTile(
@@ -39,8 +42,6 @@ class ContactsList extends StatelessWidget {
                     ),
                   ),
                 ),
-                const Divider(color: dividerColor,
-                indent: 85,)
               ],
             );
           },

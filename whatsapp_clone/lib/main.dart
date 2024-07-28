@@ -1,11 +1,11 @@
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-// void main() {
-//   runApp(const MyApp());
-// }
+
 import 'package:device_preview/device_preview.dart';
 import 'package:whatsapp_clone/screens/mobile_screen.dart';
-import 'package:whatsapp_clone/utils/colors.dart';
+
+
 
 void main() => runApp(
   DevicePreview(
@@ -13,7 +13,9 @@ void main() => runApp(
     builder: (context) => const MyApp(), // Wrap your app
   ),
 );
-
+// void main() {
+//   runApp(const MyApp());
+// }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -27,9 +29,7 @@ class MyApp extends StatelessWidget {
 
       debugShowCheckedModeBanner: false,
       title: 'WhatsApp_Clone',
-      theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: backgroundColor,
-      ),
+      theme: ThemeData.light(),
       home: const MobileScreen(),
     );
   }
