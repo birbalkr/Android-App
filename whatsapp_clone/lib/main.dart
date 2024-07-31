@@ -7,15 +7,15 @@ import 'package:whatsapp_clone/screens/mobile_screen.dart';
 
 
 
-void main() => runApp(
-  DevicePreview(
-    enabled: !kReleaseMode,
-    builder: (context) => const MyApp(), // Wrap your app
-  ),
-);
-// void main() {
-//   runApp(const MyApp());
-// }
+// void main() => runApp(
+//   DevicePreview(
+//     enabled: !kReleaseMode,
+//     builder: (context) => const MyApp(), // Wrap your app
+//   ),
+// );
+void main() {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
